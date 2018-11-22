@@ -63,3 +63,16 @@ we want our store to become an observable and we want the components to be obser
  To make the syntax easier for us, we will use es7 decorators syntax that gives us the @ sign.
 
  # npm run eject
+ # npm install @babel/plugin-proposal-decorators
+ * These commands will invoke the create-react-app from scratch with the decorators installed as part of the package.
+
+ # We will also add the following Babel configuration to our package.json file:
+
+"babel": {
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
+  ],
+  "presets": [
+    "react-app"
+  ]
+},
